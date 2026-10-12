@@ -1,0 +1,39 @@
+# 大体积源码与工具链（不入库，README 说明获取方式）
+source/
+source-flicker/
+toolchains/
+platform-tools/
+out/
+out-flicker/
+
+# 编译输出 / 内核镜像 / 模块（体积过大，见 backup 说明）
+*.img
+*.ko
+*.o
+*.a
+vmlinux
+System.map
+
+# 日志 / bugreport / 临时
+logs/
+bugreport*/
+*.log
+*.pcap*
+MIUI/
+MIUIlogs/
+
+# 备份目录（含大镜像）
+backup-working-*/
+
+# 系统垃圾
+.mimocode/
+.DS_Store
+*.bak
+*.bak2
+*.bak3
+
+# dmesg / 诊断日志
+*-dmesg.txt
+*.tar.gz
+output.txt
+boot-work/
